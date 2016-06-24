@@ -27,6 +27,15 @@ This is the main blog file which holds the methods that help the blog run.
 **auth.py**
 This is the module used to help authenticated the user data. It has some infromation that should not be in the main blog file, and has been moved to it's own for added security.
 
+**comment.py**
+Holds the information for the Comment database.
+
+**post.py**
+Holds the information for the Post database.
+
+**user.py**
+Holds the information for the User database.
+
 ### Directory Stucture
 ---
 | Directory | Description |
