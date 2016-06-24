@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="../static/css/style.css" />
+</head>
+<h2 class="text-center">Create Account</h2>          
+<div class="sign-outer text-right">
+    <form method="post">
+      
+        
+        
+             <div class="text-center">
+                <div class="right">
+                    <label>Username</label>
+                </div>
+                <div class="left">
+                    <input type="text" name="username" placeholder="Username" value="{{username}}" size=20>
+                    <span class="error">{{error_username}}</span>
+                </div>
+                
+            </div>
+               
+               
+            <div class="row">
+                <div class="right">
+                    <label>Password</label>
+                </div>
+                <div class="left">
+                    <input type="password" name="password" placeholder="Password">
+                    <span class="error">{{error_password}}</span>
+                </div>
+                
+            </div>
+               
+            <div class="row">
+                <div class="right">
+                    <label>Verify</label>
+                </div>
+                <div class="left">
+                    <input type="password" name="verify" placeholder="Password">
+                </div>
+                <div class="error">{{error_verify}}</div>
+            </div>
+               
+            <div class="row">
+                <div class="right">
+                    <label>Email<span class="optional">*</span></label>
+                </div>
+                <div class="left">
+                    <input type="text" name="email" value="{{email}}"placeholder="E-mail">
+                </div>
+                
+                <div class="error">{{error_email}}</div>
+            </div>
+            <div class="text-center">
+                <p><span class="optional">*</span> = optional</p>
+                <input type="submit" class="btn btn-success">    
+            </div>    
+            
+    </form>   
+</div>
+         
+<body>
+</body>
+</html>

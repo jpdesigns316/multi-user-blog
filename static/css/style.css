@@ -1,0 +1,270 @@
+@media screen and (max-width: 450px) {
+    img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .post-title {
+        font-size: 48px;
+    }
+    
+    span {
+        font-size: 12px;
+    }
+    
+    .post-heading {
+        font-size: 12px;        
+    }
+    
+    .user {
+    margin-right: 10%;
+    font-size: 12px;
+    }
+    
+    .bottom-comment {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width:990px) {
+    .right {
+        text-align: center;
+    }
+    .post-title {
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 3px solid #f1610a;
+    }
+    
+}
+
+.logo {
+    
+    padding-top:  10px;
+    padding-left:  10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.bottom-comment {
+	border-top: 5px solid #02b3e4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.thick {
+    border-top: 10px solid #8c8b8b;
+}
+
+/* Formatting Nav Bar */
+nav {
+               
+    margin-left:  10px;
+    font-size:12px;
+    font-weight:bold;
+    font-variant:small-caps;
+    padding: 0.2em 1em;
+    margin-top:50px;	
+    color: #000;
+    text-decoration: none;
+}
+
+nav a:hover {
+    padding:5px;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 10px;
+    background-color:#cc9;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+}
+
+nav a {              
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;
+    padding-left: 10px;
+    background-color: #fff;
+    color: #000;
+    font-variant:small-caps;
+}
+
+/* Used to format the position of the welcome message*/
+.spacer {
+    margin-left: 10px;
+}
+
+
+/* Align welmome, user to the middle */
+.user {
+    margin-right: 25%;
+    font-size: 16px;
+}
+
+
+
+/* Past CSS code */
+.post + .post {
+    margin-top: 15px;
+}
+
+.post-heading {
+    position: relative;
+    border-bottom: 3px solid #666;
+}
+
+.post-title {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 3px solid #f1610a;
+}
+
+.post-likes {
+    font-size: 16px;
+    color: #666;
+}
+
+.post-date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #999;
+
+}
+
+.post-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.post-footer {
+    position: relative;
+    border-top: 3px solid #666;
+}
+
+/* Formatting the psition and look for the comments*/ 
+.comment-frame {
+    margin-left: 50px;
+    margin-top:  10px;
+    padding: 5px;
+}
+.comment-author {
+    font-size: 24px;
+    color: #f1610a;
+}
+
+/* Misc CSS code */ 
+.editDelelete {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+div a {
+    
+    text-decoration: none;
+    text-align: center;
+    color: #007798;
+    
+}
+.round-top {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 35px;
+    padding-left: 25px;
+    background-color: #f1610a;
+    border:1px solid black;    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #007798;
+    font-size: 24px;
+}
+
+.round-bottom {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 35px;
+    background-color: #f1610a;
+    border:1px solid black;  
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.round-top-comment {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 35px;
+    background-color: #02b3e4; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #02b3e4;
+    font-size: 24px;
+}
+
+.round-bottom-comment {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 35px;
+    background-color: #02b3e4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 5px solid #f1610a;
+}
+
+.form-frame {
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-frame-text {
+    padding-right: 20px;
+    padding-top: 20px;
+    color: #02b3e4;
+}
+
+.form-input {
+  float: left;
+}
+
+
+.btn-blue {
+    color: #fff;
+    background-color: #02b3e4;
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+    padding-bottom: 10px;
+}
+
+.test {
+    border: 2px solid red;
+    background-color: sandybrown;
+}
+
+.outer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.inner
+{
+    width: 100%;
+    border:1px solid black;
+}
+
+.subject-label {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.small_title {
+    padding-left: 25px;
+}

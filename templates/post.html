@@ -1,0 +1,21 @@
+<div class="post-heading">
+	<div class="round-top">
+		<span class="small-title">
+			{{p.subject}}
+		</span>
+	</div>
+</div>
+<div class="post-content">
+	{{p.content}}
+</div>
+<div class="row round-bottom">
+    <div class="text-center">
+        <div class=" bottom-comment">
+            <div class="col-md-6 text-center">
+                [ Posted by {{p.author}} on {{p.created.strftime("%b %d, %Y")}} | <a href="/blog/{{p.key().id()}}">Permalink</a> ] <br>
+                [ Comments ({{p.comments.count()}}) | <a href="/blog/{{p.key().id()}}/newcomment">add comment</a> ]<br>
+            </div>
+        </div>
+    </div>
+        
+</div>

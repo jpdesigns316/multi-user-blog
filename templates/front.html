@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+{% for p in posts %}
+<div class="post-heading">
+	<div class="round-top">
+		<span class="small-title">
+			{{p.subject}} - Likes ({{p.likes}}) 
+			<!-- Creating self-error checking to prevent user form liking their own post -->
+			 {% if user.name != p.author %}
+                {% if user.name not in p.liked_by %}
+			        <a href="/blog/{{p.key().id()}}/like">Like</a>
+			     {% endif %}
+			{% endif %}
+		</span>
+	</div>
+</div>
+<div class="post-content">
+	{{p.content}}
+</div>
+<div class="row round-bottom">
+    <div class="text-center">
+        <div class=" bottom-comment">
+            <div class="col-md-6 text-center">
+                [ Posted by {{p.author}} on {{p.created.strftime("%b %d, %Y")}} | <a href="/blog/{{p.key().id()}}">Permalink</a> ] <br>
+                [ Comments ({{p.comments.count()}}) | <a href="/blog/{{p.key().id()}}/newcomment">add comment</a> ]<br>
+            </div>
+            <div class="col-md-6 text-right bottom">
+                <!-- Creating self-error checking to prevent user form modifying their own post -->
+                {% if user.name == p.author %}
+                [ <a href="/blog/{{p.key().id()}}/updatepost">Edit</a> | <a href="/blog/{{p.key().id()}}/deletepost">Delete</a> ]
+                {% endif %}
+            </div>
+        </div>
+    </div>
+        
+</div>
+
+<br>
+<br>
+{% endfor %}
+{% endblock %}

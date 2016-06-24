@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="outer">
+    <div class="round-top text-center">
+        New Post
+    </div>
+    <form method="post" class="text-center">
+        <div class="inner">
+            <div class="outer">
+                <div class="form-frame-text">
+                    <label for="subject">Subject: {{subject}}</label>
+                </div>  
+            </div>
+            <div class="outer">
+                <div class="form-frame-text">
+                    <label>Body:</label>
+                </div>
+                <div class="form-frame-input">
+                    <textarea class="form-control" name="comment" rows="5">{{comment}}</textarea>
+                </div>
+            </div>
+        <div class="text-center">
+            <div class="error">{{error}}</div>
+                <button type="submit" class="btn btn-blue">Submit</button>    
+            </div>
+        </div>
+    </form>
+    <div class="round-bottom">
+        
+    </div>
+     
+</div>
+     
+       
+
+
+
+{% endblock %}

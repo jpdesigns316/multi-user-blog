@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="outer">
+    <div class="round-top text-center">
+        Register
+    </div>
+    <div class="inner">
+        <form class="text-center" method="post">
+           
+            <fieldset class="form-group">
+                <div class="form-frame-text">
+                    <label>Username:</label>
+                    <input type="text"  name="username" placeholder="Username" value="{{username}}" size=20>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <div class="form-frame-text">
+                    <label>Password:</label>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+            </fieldset>
+            
+             <fieldset class="form-group">
+                <div class="form-frame-text">
+                    <label>Verify Password:</label>
+                    <input  type="password" name="verify" placeholder="Password">
+                </div>
+            </fieldset>
+            
+                 <fieldset class="form-group">
+                <div class="form-frame-text">
+                    <label>Email:</label>
+                    <input type="text" name="email" placeholder="Email">
+                </div>
+            </fieldset>
+            <div class="error">{{error}}</div>
+            <button type="submit" class="btn btn-blue">Submit</button>
+        </form>
+    </div>
+        
+    <div class="round-bottom">
+        
+    </div>
+     
+</div>
+
+
+
+				
+{% endblock %}
